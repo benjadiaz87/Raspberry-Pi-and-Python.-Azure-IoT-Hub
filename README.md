@@ -8,15 +8,24 @@ This is the ONLY guide I got working on my Raspberry Pi 3 and my Raspberry Pi 2 
 Setting up your Pi:
 
 1) Write raspbian Jessie on sd card https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+
 2) Connect your raspberry to a screen and move on with step 3. Or work headless and move on to step 2.1.
-  2.1) Share your internet connection
-  2.2) Connect your raspberry with your PC with a UTP cable
-  2.3) Find your raspberry IP with arp -a in cmd
-  2.4) Connect to you raspberry with ssh, default credentials u:pi p:raspberry (I use WinSCP and Putty)
+
+2.1) Share your internet connection
+
+2.2) Connect your raspberry with your PC with a UTP cable
+
+2.3) Find your raspberry IP with arp -a in cmd
+
+2.4) Connect to you raspberry with ssh, default credentials u:pi p:raspberry (I use WinSCP and Putty)
+
 3) Update stuff sudo apt-get update
+
 4) Upgrade stuff sudo apt-get upgrade
-Configure wifi (or keep using the UTP cable and move on to step 6), navigate to network config sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-Enter settings at bottom of file, after connected to wifi you can find the ip address on the router network={ ssid=”ssid” psk=”password” }
+
+5) Configure wifi (or keep using the UTP cable and move on to step 6), navigate to network config sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+6) Enter settings at bottom of file, after connected to wifi you can find the ip address on the router network={ ssid=”ssid” psk=”password” }
  
 
 Followed this instruction: https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/devbox_setup.md
